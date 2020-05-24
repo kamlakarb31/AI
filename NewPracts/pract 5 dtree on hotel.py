@@ -10,7 +10,7 @@ from IPython.display import Image
 import pydotplus
 
 col_names = ['Reservation', 'Raining', 'BadService','Satur','Result']
-hoteldata = pd.read_csv("hotel.csv", header=None, names=col_names)
+hoteldata = pd.read_csv("hotel for dtree.csv", header=None, names=col_names)
 feature_cols = ['Reservation', 'Raining', 'BadService','Satur']
 X = hoteldata[feature_cols] # Feature Columns
 y = hoteldata.Result # Target variable
